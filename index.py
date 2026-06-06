@@ -6,7 +6,8 @@ test = pd.read_csv("test.csv")
 # print(train.info())
 # print(test.info())
 # print(train.describe())
-missing = train.isnull().sum().sum()
+missing = train.isnull().sum().sum
+print(missing)
 
 
 #Data cleaning
