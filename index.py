@@ -30,3 +30,20 @@ print(train["BsmtQual"].isnull().sum())
 #BsmtCond
 train["BsmtCond"] = train["BsmtCond"].fillna(train["BsmtCond"].mode)
 print(train["BsmtCond"].isnull().sum())
+
+#BsmtExposure
+train["BsmtExposure"] = train["BsmtExposure"].fillna(train["BsmtExposure"].mode)
+print(train["BsmtExposure"].isnull().sum())
+
+#BsmtFinType1
+train["BsmtFinType1"] = train["BsmtFinType1"].fillna(train["BsmtFinType1"].mode)
+print(train["BsmtFinType1"].isnull().sum())
+
+#BsmtFinType1
+train["BsmtFinType2"] = train["BsmtFinType2"].fillna(train["BsmtFinType2"].mode)
+print(train["BsmtFinType2"].isnull().sum())
+
+#Electrical
+train["Electrical"] = train["Electrical"].fillna(train["Electrical"].mode)
+print(train["Electrical"].isnull().sum())
+
