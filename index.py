@@ -6,9 +6,12 @@ test = pd.read_csv("test.csv")
 # print(train.info())
 # print(test.info())
 # print(train.describe())
-missing = train.isnull().sum().sum
-print(missing)
-
+# missing = train.isnull().sum()
+# print(missing[missing > 0])
 
 #Data cleaning
+# train["LotFrontage"] = train["LotFrontage"].fillna((train["LotFrontage"].mean))
+# missing = train["LotFrontage"].isnull().sum()
+# print(missing)
+
 
